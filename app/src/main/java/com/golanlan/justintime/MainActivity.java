@@ -54,14 +54,13 @@ public class MainActivity extends AppCompatActivity {
             Intent myIntent = new Intent(MainActivity.this, AlarmReceiver.class);
             pendingIntent = PendingIntent.getBroadcast(getBaseContext(), 0, myIntent, 0);
 
-            calendar = Calendar.getInstance();
-
             int hour = alarmTimePicker.getHour();
             int minute = alarmTimePicker.getMinute();
 
             LocalTime currentTime = new LocalTime(hour, minute);
             LocalTime timeForAlert = currentTime.minusMinutes(5);
 
+            calendar = Calendar.getInstance();
             calendar.set(Calendar.HOUR_OF_DAY, timeForAlert.getHourOfDay());
             calendar.set(Calendar.MINUTE, timeForAlert.getMinuteOfHour());
 
