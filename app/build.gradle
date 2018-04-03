@@ -28,6 +28,8 @@ dependencies {
     compile 'joda-time:joda-time:2.9.9'
     compile 'net.codecrafted:lineartimepicker:1.0.0'
     compile 'com.github.zcweng:switch-button:0.0.3@aar'
+    compile 'com.shawnlin:number-picker:2.4.6'
+
 
 
 }

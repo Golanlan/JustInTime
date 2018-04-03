@@ -22,8 +22,8 @@ public class AlarmReceiver extends WakefulBroadcastReceiver {
     @Override
     public void onReceive(final Context context, Intent intent) {
         //this will update the UI with message
-        MainActivity inst = MainActivity.instance();
-        inst.setAlarmText("Wake up! Wake up!");
+//        MainActivity inst = MainActivity.instance();
+//        inst.setAlarmText("Wake up! Wake up!");
 
         // TODO: 2/10/2018 Change alarm to txt to speech
 
